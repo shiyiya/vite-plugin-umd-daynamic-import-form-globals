@@ -1,0 +1,1 @@
+# vite-plugin-umd-daynamic-import-form-globals
