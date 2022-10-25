@@ -31,8 +31,8 @@ export default function (): PluginOption {
   let extensions = DEFAULT_EXTENSIONS
   return {
     name: 'dynamic-imports',
-    config(config) {
-      // @ts-ignore
+    configResolved(config) {
+      //@ts-ignore
       globals = config.build?.rollupOptions?.output?.globals
       if (config.resolve?.extensions) extensions = config.resolve.extensions
     },
